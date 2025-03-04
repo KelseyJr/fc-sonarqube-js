@@ -1,0 +1,9 @@
+services:
+  app:
+    container_name: ci-sonarqube-js
+    build: 
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/src
+    stdin_open: true
+    tty: true
