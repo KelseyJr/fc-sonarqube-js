@@ -14,7 +14,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Test and coverage
-        run: npx jest --coverage --collectCoverageFrom=src/index.js
+        run: npx jest --coverage
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v5
         env:
