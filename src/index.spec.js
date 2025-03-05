@@ -46,6 +46,15 @@ describe('times', () => {
 })
 
 describe('division', () => {
+    it('should throw an error when trying to divide a number by 0', () => {
+        // arrange
+        const a = 10;
+        const b = 0;
+
+        // act & assert
+        expect(() =>  division(a, b)).toThrow()
+    })
+
     it('should divide two numbers', () => {
         // arrange
         const a = 10;
